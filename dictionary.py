@@ -1,11 +1,17 @@
 # album dictionary
 
-music = {'Artist 1':
-             {'Album 1':
-                  {'songs': ['song1', 'song2'],
-                   'year': 1974,
+music = {'Travis Scott':  # Key
+             {'Astroworld':
+                  {'songs': ['Stargazing', 'Carousel', 'Sicko Mode',
+                             'R.I.P. Screw', 'Stop Trying to Be God',
+                             'No Bystanders', 'Skeletons', 'Wake Up',
+                             '5% Tint', 'NC-17', 'Astrothunder', 'Yosemite',
+                             'Can’t Say', 'Who? What!', 'Butterfly Effect',
+                             'Houstonfornication', 'Coffee Bean'],
+                   'year': 2018,
                    'platinum': True
                    }
+
               }
          }
 
@@ -13,63 +19,67 @@ music = {'Artist 1':
 #  TODO watch
 
 def add_artist():
-    pass
+    print('You selected to add an artist')
 
 
 def add_album():
-    pass
+    print('You selected to add an album')
 
 
 def add_song():
-    pass
+    print('You selected to add a song')
 
 
 def remove_artist():
-    pass
+    print('You selected to remove an artist')
 
 
 def remove_album():
-    pass
+    print('You selected to remove an album')
 
 
 def remove_song():
-    pass
+    print('You selected to remove a song')
 
 
 def print_music():
     # print all parts of 'music' dict
-    pass
+    print('You selected to print the dictionary')
+    print(music)
 
 
 def edit_album():
     # edit songs list, year, and platinum status
-    pass
+    print('You selected to edit an album')
 
 
 def menu():
     # print menu options
     # take input for option
     # return input
-    pass
+    print('Option 0: Add artist')
+    print('Option 1: Add album')
+    print('Option 2: Add song')
+    print('Option 3: Remove artist')
+    print('Option 4: Remove album')
+    print('Option 5: Remove song')
+    print('Option 6: Print dictionary')
+    print('Option 7: Edit an album')
+    var = int(input('What option would you like to choose?: \n'))
+    return var
 
 
 def main():
-    var = input('Enter name:\n')
-    print('Your name is {}'.format(var))
-    print('Newport')
-
     functions = [add_artist, add_album, add_song,
                  remove_artist, remove_album, remove_song,
                  print_music, edit_album]
 
     var = 0
 
-    while var != 'exit':
+    while var != 'exit':  # close for loop by making input asking if the user wants to continue or exit
         var = menu()
         functions[var]()
 
-
-# TODO do this here
 
 if __name__ == "__main__":
     main()
