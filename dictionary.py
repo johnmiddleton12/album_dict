@@ -13,6 +13,7 @@ albums = {'Artist 1':
 def main():
     var = input('Enter name:\n')
     print('Your name is {}'.format(var))
+    print('fdsaf')
 
 #TODO do this here
 
