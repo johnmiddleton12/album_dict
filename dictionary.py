@@ -8,7 +8,7 @@ albums = {'Artist 1':
                     }
                }
           }
-#  TODO make changes
+#  TODO watch
 
 def main():
     var = input('Enter name:\n')
