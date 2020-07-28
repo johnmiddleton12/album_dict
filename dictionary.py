@@ -11,7 +11,10 @@ albums = {'Artist 1':
 
 
 def main():
-  print("Hey")
+    var = input('Enter name:\n')
+    print('Your name is {}'.format(var))
+
+#TODO do this here
 
 if __name__ == "__main__":
     main()
