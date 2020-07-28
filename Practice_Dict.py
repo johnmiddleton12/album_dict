@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-inquiry = input('Enter name to find age: ')
-person_age = {'James': 18, 'Erik': 12, 'Caroline': 20}
-print(person_age[inquiry])
-=======
 albums = {'Travis Scott':
               {'Astroworld':
                    {'songs': ['Stargazing', 'Carousel', 'Sicko Mode',
@@ -18,4 +13,3 @@ albums = {'Travis Scott':
           }
 inquiry = input('Enter Artist: ')
 print(albums[inquiry])
->>>>>>> ab2c244a55e8e875831ee46bda6224c2083e7733
