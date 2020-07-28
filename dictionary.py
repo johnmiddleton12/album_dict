@@ -8,12 +8,12 @@ albums = {'Artist 1':
                     }
                }
           }
-
+#  TODO watch
 
 def main():
     var = input('Enter name:\n')
     print('Your name is {}'.format(var))
-    print('fdsaf')
+    print('Newport')
 
 #TODO do this here
 
