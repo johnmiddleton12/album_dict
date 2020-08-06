@@ -9,7 +9,11 @@ albums = {'Travis Scott':
                     'year': 2018,
                     'platinum': True
                     }
-               }
+               },
+          'Taylor Swift':
+              {}
           }
-inquiry = input('Enter Artist: ')
-print(albums[inquiry])
+# inquiry = input('Enter Artist: ')
+# print(albums[inquiry])
+
+print(albums['Travis Scott']['Astroworld']['songs'][0])

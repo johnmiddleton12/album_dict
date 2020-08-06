@@ -10,7 +10,15 @@ music = {'Travis Scott':  # Key
                              'Houstonfornication', 'Coffee Bean'],
                    'year': 2018,
                    'platinum': True
-                   }
+                   },
+                'Rodeo':
+                    {'songs': ['Pornography', 'Oh My Dis Side', '3500', 'Wasted',
+                                  '90210', 'Pray 4 Love', 'Nightcrawler', 'Piss on Your Grave',
+                                  'Antidote', 'Impossible', "Maria I'm Drunk", 'Flying High',
+                                  'I Can Tell', 'Apple Pie', 'Ok Alright', 'Never Catch Me'],
+                    'year': 2015,
+                    'platinum': True
+                    }
 
               }
          }
@@ -45,13 +53,27 @@ def remove_song():
 def print_music():
     # print all parts of 'music' dict
     print('You selected to print the dictionary')
-    print(music)
+    for artists in music:
+        print(artists)
+        for albums in music[artists]:
+            print(albums)
+            print('Songs:', end = ' ')
+            for i in music[artists][albums]['songs']:
+                if i == music[artists][albums]['songs'][-1]:
+                    print(i)
+                else:
+                    print(i, end = ', ')
+
+
+
+
+
+
 
 
 def edit_album():
     # edit songs list, year, and platinum status
     print('You selected to edit an album')
-
 
 def menu():
     # print menu options
@@ -73,6 +95,7 @@ def main():
     functions = [add_artist, add_album, add_song,
                  remove_artist, remove_album, remove_song,
                  print_music, edit_album]
+
 
     var = 0
 
