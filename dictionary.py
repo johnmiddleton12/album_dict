@@ -1,17 +1,22 @@
 # album dictionary
 
-music = {'Travis Scott':  # Key
-             {'Astroworld':
-                  {'songs': ['Stargazing', 'Carousel', 'Sicko Mode',
-                             'R.I.P. Screw', 'Stop Trying to Be God',
-                             'No Bystanders', 'Skeletons', 'Wake Up',
-                             '5% Tint', 'NC-17', 'Astrothunder', 'Yosemite',
-                             'Can’t Say', 'Who? What!', 'Butterfly Effect',
-                             'Houstonfornication', 'Coffee Bean'],
-                   'year': 2018,
-                   'platinum': True
-                   }
-
+music = {'Travis_Scott':  # Key
+             {'Astroworld': {'songs': ['Stargazing', 'Carousel', 'Sicko Mode',
+                                       'R.I.P. Screw', 'Stop Trying to Be God',
+                                       'No Bystanders', 'Skeletons', 'Wake Up',
+                                       '5% Tint', 'NC-17', 'Astrothunder', 'Yosemite',
+                                       'Can’t Say', 'Who? What!', 'Butterfly Effect',
+                                       'Houstonfornication', 'Coffee Bean'],
+                             'year': 2018,
+                             'platinum': True
+                             },
+              'Rodeo': {'songs': ['Pornography', 'Oh My Dis Side', '3500', 'Wasted',
+                                  '90210', 'Pray 4 Love', 'Nightcrawler', 'Piss on Your Grave',
+                                  'Antidote', 'Impossible', "Maria I'm Drunk", 'Flying High',
+                                  'I Can Tell', 'Apple Pie', 'Ok Alright', 'Never Catch Me'],
+                        'year': 2015,
+                        'platinum': True
+                        }
               }
          }
 
@@ -45,7 +50,12 @@ def remove_song():
 def print_music():
     # print all parts of 'music' dict
     print('You selected to print the dictionary')
-    print(music)
+
+    #  for thing in music:
+    #    print(thing)
+    #  for thing in Travis Scott:
+    #    for thing in music:
+    #       print(thing)
 
 
 def edit_album():
