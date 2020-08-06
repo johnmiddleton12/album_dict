@@ -1,6 +1,6 @@
 # album dictionary
 
-music = {'Travis_Scott':  # Key
+music = {'Travis Scott':  # Key
              {'Astroworld': {'songs': ['Stargazing', 'Carousel', 'Sicko Mode',
                                        'R.I.P. Screw', 'Stop Trying to Be God',
                                        'No Bystanders', 'Skeletons', 'Wake Up',
@@ -21,7 +21,7 @@ music = {'Travis_Scott':  # Key
          }
 
 
-#  TODO watch
+
 
 def add_artist():
     print('You selected to add an artist')
@@ -50,13 +50,10 @@ def remove_song():
 def print_music():
     # print all parts of 'music' dict
     print('You selected to print the dictionary')
-
-    #  for thing in music:
-    #    print(thing)
-    #  for thing in Travis Scott:
-    #    for thing in music:
-    #       print(thing)
-
+    for artists in music:
+        print(artists)
+        for albums in music[artists]:
+            print(albums)
 
 def edit_album():
     # edit songs list, year, and platinum status
